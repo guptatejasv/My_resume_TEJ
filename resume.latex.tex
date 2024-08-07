@@ -1,0 +1,343 @@
+
+% Resume in Latex
+% Author :Tejasv Kumar
+% Based off of: https://github.com/sb2nov/resume
+
+
+\documentclass[letterpaper,11pt]{article}
+
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+
+\urlstyle{same}
+
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+     
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\begin{document}
+
+
+%----------HEADING----------
+
+
+
+
+\begin{center}
+    {\Huge \scshape Tejasv Kumar} \\ \vspace{1pt}
+    Hardoi,Uttar Pradesh \\ \vspace{1pt}
+    \small \href{tel:+xxxxxxxxxxxx}{ \raisebox{-0.1\height}\faPhone\ \underline{+91-8303484340} ~} \href{mailto:guptatejasv86086@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{guptatejasv86086@gmail.com}} ~
+    \href{https://www.linkedin.com/in/kumar-tejasv86086}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{kumar-tejasv86086}}  ~
+    \href{https://github.com/guptatejasv}{\raisebox{-0.2\height}\faGithub\ \underline{guptatejasv}} ~
+    \href{https://www.hackerrank.com/profile/georgejack166}{\raisebox{-0.2\height}\faHackerrank\ \underline{georgejack166}} ~
+    % \href{https://codeforces.com/profile/yourid}{\raisebox{-0.2\height}\faPoll\ \underline{yourid}}
+    % \vspace{-8pt}
+\end{center}
+
+
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Invertis University, Bareilly}{08 2022 -- Current}
+      {B.Tech CSE - \textbf{Percentage} - \textbf{84.24}}{Bareilly, India}
+  \resumeSubHeadingListEnd
+ 
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {CSJM University, Kanpur}{08 2019 -- 08 2022}
+      {B.Sc (PCM)\textbf \textbf{}}{Kanpur, India}
+  \resumeSubHeadingListEnd
+
+  
+
+
+%------RELEVANT COURSEWORK-------
+\section{COURSEWORK / SKILLS}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-2pt, parsep=5pt]
+                \item Data Structures \& Algorithms
+                \item Operating Systems
+                \item Compiler Design
+                \item Database Management System (DBMS)
+               \item Artificial Intelligence
+                \item OOPS Concept
+                \item Web Development
+              
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+
+
+
+
+%-----------PROJECTS-----------
+\section{PERSONAL PROJECTS}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+       \resumeProjectHeading
+          {\href{https://invertisnews.000webhostapp.com/index.php}{\textbf{\large{\underline{Student Complain reporting Portal}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{HTML, CSS, JavaScript, BootStrap, PHP, MySql}}}{02 2024}
+          \resumeItemListStart
+            \resumeItem {\normalsize {Complaint Submission: \textbf{500+} users registered at the portal. An easy-to-use form for students to submit complaints, including categories and detailed descriptions.
+}}
+            \resumeItem{\normalsize{Complaint Tracking: Students can view the status of their complaints and receive updates.}}
+            \resumeItem{\normalsize{Admin Panel: A separate interface for university administrators that reduces the time to view, manage, and resolve complaints by  \textbf{30{\%}}.
+            }}
+            \resumeItem{\normalsize{Increased the efficiency of lodging and resolving student complaints by \textbf{45{\%}}.
+            }}
+
+            
+            
+          \resumeItemListEnd 
+          \vspace{-13pt}
+         
+      \resumeProjectHeading
+          {\href{https://github.com/guptatejasv/Featured-Chat-App.git}{\textbf{\large{\underline{VibeWire }}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Socket.io, JavaScript, NodeJS, Express, MongoDB(Database), eJS }}}{07 2024}
+          \resumeItemListStart
+            \resumeItem{\normalsize{\textbf{VibeWire} is a Real Time Chat Application created using socket.io. This chat application designed to facilitate seamless communication between users.}}
+             \resumeItem{\normalsize{\textbf{Real-Time Messaging:} Supports 1-to-1 chat with instant message delivery.}}
+             \resumeItem{\normalsize{\textbf{User Presence:} Real-time status updates (online/offline) for up to 1,000 users.}}
+              \resumeItem{\normalsize{\textbf{Chat History:}Stores up to 10,000 messages per user for access and review.
+                }}
+           
+          \resumeItemListEnd
+          \vspace{-10pt}
+         
+          
+         
+
+
+
+%
+
+
+
+
+%-----------EXPERIENCE-----------
+\section{INTERNSHIP}
+  \resumeSubHeadingListStart
+
+
+    \resumeSubheading
+      {Solulab, Ahamdabad \href{certificate Link}{\raisebox{-0.1\height}\faExternalLink }}{06 2024 --  Current}
+      {\underline{Vocational Trainee (NodeJS)}}{Remote}
+      \vspace{-0pt}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Contributed to designing and implementing \textbf{RESTful APIs} using \textbf{TypeScript} for various applications, ensuring robust functionality and secure data handling.}}
+         \resumeItem{\normalsize{Worked with MongoDB database to manage data storage, retrieval, and integration within applications.}}
+          \resumeItem{\normalsize{Worked with Microservices Architecture and learned \textbf{RabbitMQ} Message Broking Service to establish connection between two Microservices and \textbf{Docker} for containerization. }}
+ 
+      \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+    \resumeSubheading
+      {Celebal Technologies, Jaipur \href{https://drive.google.com/file/d/1jTqO9w0p2rVOXXlVBa6pi6FdzTVWM7FQ/view?usp=drive_link}{\raisebox{-0.1\height}\faExternalLink }}{05 2024 --  07 2024}
+      {\underline{NodeJS Intern}}{Remote}
+      \vspace{-1pt}
+      \resumeItemListStart
+        
+          \resumeItem{\normalsize{Contributed to develop Node Applications 
+ensuring robust functionality and secure data handling }}
+ \resumeItem{\normalsize{Integrated Payment gateway system (Instamojo and Paypal)}}
+ 
+      \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+%-----------PROGRAMMING SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Languages:}}{ \normalsize{C, C++,  JavaScript, Java, Python}} \\
+     \textbf{\normalsize{Developer Tools:}}{ \normalsize{VS Code, Jira(Atlasian)}} \\
+     \textbf{\normalsize{Technologies/Frameworks:}}{\normalsize{ GitHub(Version Control), ReactJS, React Native, Redux, NodeJS, ExpressJS, Git, MongoDB}} \\
+    }}
+ \end{itemize}
+ \vspace{-15pt}
+
+
+
+
+
+ 
+ %-----------CERTIFICATIONS---------------
+\section{CERTIFICATIONS}
+
+
+$\sbullet[.75] \hspace{0cm}$ {\href{https://www.hackerrank.com/certificates/e0dc1f98230f}{JavaScript(Basics)- HackerRank}} \hspace{0.5cm}
+$\sbullet[.5] \hspace{0.1cm}$ {\href{https://www.hackerrank.com/certificates/35ddd142df44}{CSS (Basics)- HackerRank}} \hspace{0.5cm}
+$\sbullet[.5] \hspace{0.2cm}${\href{https://www.hackerrank.com/certificates/4392cbf0508a} {Problem Solving (Basics)- HackerRank}}\\
+
+
+$\sbullet[.75] \hspace{0.2cm}${\href{https://www.hackerrank.com/certificates/90e93a3ef140}{Problem Solving (Intermediate)- HackerRank}} \hspace{1cm}
+$\sbullet[.75] \hspace{0.1cm}$ {\href{https://www.hackerrank.com/certificates/0c8ab9e2960a}{SQL (Basics)}} \hspace{2.6cm}
+
+$\sbullet[.75] \hspace{0.1cm}$ {\href{https://drive.google.com/file/d/1S1wRK5fm6CGY2MXcZqkmtFNMBcgmcdo4/view?usp=drive_link}{Python Essential Training(2022)}} \hspace{2.6cm}
+
+
+
+\end{document}
+
+
+
+
+
